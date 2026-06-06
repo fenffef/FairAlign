@@ -1,10 +1,10 @@
-# TFairCRS: Towards Fairness in Conversational Recommender Systems
+# FairAlign: Aligning User and Item Fairness in Conversational Recommendation
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 ## Overview
 
-**TFairCRS** is a research project that addresses fairness issues in Conversational Recommender Systems (CRS). This work is built on top of the [CRSLab](https://github.com/RUCAIBox/CRSLab) framework and introduces novel approaches to ensure fair and unbiased recommendations in conversational settings.
+**FairAlign** is a research project that addresses fairness issues in Conversational Recommender Systems (CRS). This work is built on top of the [CRSLab](https://github.com/RUCAIBox/CRSLab) framework and introduces novel approaches to ensure fair and unbiased recommendations in conversational settings.
 
 ### Key Features
 
@@ -81,7 +81,7 @@ pip install -r requirements.txt
 
 ### Basic Usage
 
-Run TFairCRS with default configuration:
+Run FairAlign with default configuration:
 
 ```bash
 # CPU
@@ -163,7 +163,7 @@ Then visit http://localhost:6006 to monitor training.
 
 ### Problem Statement
 
-Traditional conversational recommender systems often suffer from fairness issues, where certain groups of items or users may receive disproportionate treatment. TFairCRS addresses these challenges by incorporating fairness constraints into the recommendation process.
+Traditional conversational recommender systems often suffer from fairness issues, where certain groups of items or users may receive disproportionate treatment. FairAlign addresses these challenges by incorporating fairness constraints into the recommendation process.
 
 ### Approach
 
@@ -176,11 +176,11 @@ Our method introduces fairness-aware mechanisms that:
 
 ### Architecture
 
-TFairCRS builds upon existing CRS models (KGSF, KBRD, TG-ReDial, etc.) and extends them with fairness-aware components.
+FairAlign builds upon existing CRS models (KGSF, KBRD, TG-ReDial, etc.) and extends them with fairness-aware components.
 
 ## Datasets
 
-We evaluate TFairCRS on multiple standard CRS datasets:
+We evaluate FairAlign on multiple standard CRS datasets:
 
 | Dataset | Dialogs | Utterances | Domain | Knowledge Graph |
 |---------|---------|------------|--------|-----------------|
@@ -192,7 +192,7 @@ We evaluate TFairCRS on multiple standard CRS datasets:
 
 ### Evaluation Metrics
 
-We evaluate TFairCRS on both **recommendation quality** and **fairness** metrics:
+We evaluate FairAlign on both **recommendation quality** and **fairness** metrics:
 
 **Recommendation Metrics:**
 - Hit@{1, 10, 50}
@@ -218,7 +218,7 @@ We evaluate TFairCRS on both **recommendation quality** and **fairness** metrics
 ## Project Structure
 
 ```
-TFairCRS/
+FairAlign/
 ├── config/              # Configuration files
 │   ├── crs/            # CRS model configs
 │   ├── conversation/   # Conversation model configs
